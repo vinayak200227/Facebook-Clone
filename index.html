@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - login or sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/fb_icon.png">
+</head>
+<body>
+    <div id="container">
+        <div id="recent-logins">
+            <img id="facebook" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+            <div class="slogon"><h3 >Facebook helps you connect and share with the people in your life.</h3></div>        
+            <div id="title">Recent logins</div>
+            <div id="subtitle">Click your picture or add an account.</div>
+            <div id="cards">
+                <div id="card-1">
+                    <div id="cancel">x</div>
+                    <img id="card-1-img" src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Profile image">
+                    <div class="username">Vinayak</div>
+                </div>
+                <div id="card-2">
+                    <img id="card-2-img" src="data:image/png;base64,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" alt="Add account">
+                    <div id="add-account" class="username">Add Account</div>
+                </div>
+            </div>
+        </div>
+        <div id="login">
+            <input type="email" placeholder="Email or phone number">
+            <input type="passward" placeholder="Passward">
+            <input type="button" value="Log In" id="login-button">
+            <a href="#">Forgotten passward? </a>
+            <hr style="width:95%;">
+            <input type="button" value="Create New Account" id="create-new-account">
+            <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-text">
+            English (UK)
+            मराठी
+            हिन्दी
+            اردو
+            ગુજરાતી
+            ಕನ್ನಡ
+            ਪੰਜਾਬੀ
+            தமிழ்
+            বাংলা
+            తెలుగు
+            മലയാളം
+            <hr style="width:100%;">
+            SignUp LogIn Messenger FacebookLite Watch Places Games Marketplace FacebookPay Oculus Portal Instagram Bulletin Local 
+            <br>
+            Fundraisers  Services Voting Information Centre  Groups About Createad CreatePage Developers Careers Privacy Cookies AdChoices Terms
+            <br>
+            Help
+            <br><br>
+            Meta © 2022
+        </div>
+    </footer>
+</body>
+</html>
